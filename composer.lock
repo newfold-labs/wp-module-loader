@@ -1,0 +1,218 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f4ed258c39dcfc133e28e705f9a2a5ba",
+    "packages": [
+        {
+            "name": "psr/container",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/513e0666f7216c7459170d56df27dfcefe1689ea",
+                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/1.1.2"
+            },
+            "time": "2021-11-05T16:50:12+00:00"
+        },
+        {
+            "name": "wp-forge/container",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-forge/container.git",
+                "reference": "e76a208d048b163dcb23068b149e16bdcfabc901"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-forge/container/zipball/e76a208d048b163dcb23068b149e16bdcfabc901",
+                "reference": "e76a208d048b163dcb23068b149e16bdcfabc901",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WP_Forge\\Container\\": "includes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "A lightweight, PHP 5.4+ compatible, PSR-11 dependency injection container.",
+            "support": {
+                "issues": "https://github.com/wp-forge/container/issues",
+                "source": "https://github.com/wp-forge/container/tree/1.0"
+            },
+            "time": "2020-03-22T22:42:37+00:00"
+        },
+        {
+            "name": "wp-forge/fluent",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-forge/fluent.git",
+                "reference": "ecc5f31981ddfacf4de5d64eea1c9ef567cb4e97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-forge/fluent/zipball/ecc5f31981ddfacf4de5d64eea1c9ef567cb4e97",
+                "reference": "ecc5f31981ddfacf4de5d64eea1c9ef567cb4e97",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WP_Forge\\Fluent\\": "includes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "An instance of the Laravel Fluent class for use with WordPress.",
+            "support": {
+                "issues": "https://github.com/wp-forge/fluent/issues",
+                "source": "https://github.com/wp-forge/fluent/tree/1.0"
+            },
+            "time": "2022-03-03T21:50:32+00:00"
+        },
+        {
+            "name": "wp-forge/wp-options",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-forge/wp-options.git",
+                "reference": "cf5806ab24cac9a1f287bc53ddd395f7806a388b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-forge/wp-options/zipball/cf5806ab24cac9a1f287bc53ddd395f7806a388b",
+                "reference": "cf5806ab24cac9a1f287bc53ddd395f7806a388b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WP_Forge\\Options\\": "includes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "A WordPress helper class for managing plugin options.",
+            "support": {
+                "issues": "https://github.com/wp-forge/wp-options/issues",
+                "source": "https://github.com/wp-forge/wp-options/tree/1.0"
+            },
+            "time": "2022-03-04T12:48:19+00:00"
+        },
+        {
+            "name": "wpscholar/collection",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wpscholar/collection.git",
+                "reference": "f26360300a786a15532f9a4b1cababf639bec10e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wpscholar/collection/zipball/f26360300a786a15532f9a4b1cababf639bec10e",
+                "reference": "f26360300a786a15532f9a4b1cababf639bec10e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "wpscholar\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "A PHP utility class for manipulating collections.",
+            "support": {
+                "issues": "https://github.com/wpscholar/collection/issues",
+                "source": "https://github.com/wpscholar/collection/tree/master"
+            },
+            "time": "2019-02-06T20:50:18+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}

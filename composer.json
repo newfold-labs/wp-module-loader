@@ -1,0 +1,25 @@
+{
+    "name": "newfold-labs/wp-module-loader",
+    "description": "A module that handles registration and management of Newfold modules used within our WordPress plugins.",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Micah Wood",
+            "email": "micah@wpscholar.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NewfoldLabs\\WP\\ModuleLoader\\": "includes"
+        },
+        "files": [
+            "bootstrap.php"
+        ]
+    },
+    "require": {
+        "wp-forge/fluent": "^1.0",
+        "wpscholar/collection": "^1.0",
+        "wp-forge/container": "^1.0",
+        "wp-forge/wp-options": "^1.0"
+    }
+}
