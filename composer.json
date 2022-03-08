@@ -13,7 +13,8 @@
             "NewfoldLabs\\WP\\ModuleLoader\\": "includes"
         },
         "files": [
-            "bootstrap.php"
+            "bootstrap.php",
+            "includes/functions.php"
         ]
     },
     "require": {
