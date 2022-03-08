@@ -52,15 +52,15 @@ if ( function_exists( 'add_action' ) ) {
 		function () {
 
 			register(
-                [
-                    'name'     => 'sso',
-                    'label'    => __( 'SSO', 'endurance' ),
-                    'callback' => function () {
-                        require __DIR__ . '/includes/sso.php';
-                    },
-                    'isActive' => true,
-                    'isHidden' => true,
-                ]
+				[
+					'name'     => 'sso',
+					'label'    => __( 'SSO', 'endurance' ),
+					'callback' => function () {
+						require __DIR__ . '/includes/sso.php';
+					},
+					'isActive' => true,
+					'isHidden' => true,
+				]
 			);
 
 		}
