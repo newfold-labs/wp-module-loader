@@ -2,7 +2,6 @@
 
 namespace NewfoldLabs\WP\ModuleLoader;
 
-use WP_Forge\Container\Container;
 use WP_Forge\Options\Options;
 
 /**
@@ -99,14 +98,10 @@ function container( Container $container = null ) {
 
 	static $instance;
 
-	// If a container was passed, set it
-	if ( ! is_null( $container ) ) {
-		$instance = $container;
-	}
-
 	// If no container was passed and was never set, default to an empty container
 	if ( ! isset( $instance ) ) {
-		$instance = new Container();
+		// If a container was passed, set it; otherwise default to an empty container.
+		$instance = ! is_null( $container ) ? $container : new Container();
 	}
 
 	return $instance;
