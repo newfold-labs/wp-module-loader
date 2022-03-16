@@ -229,3 +229,5 @@ The following functions are namespaced with `NewfoldLabs\WP\ModuleLoader`.
 >   );
 > );
 > ```
+> 
+> Documentation on how to use the container exists here: https://github.com/wp-forge/container
