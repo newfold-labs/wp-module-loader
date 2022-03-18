@@ -80,7 +80,7 @@ function load() {
 
 	// Load active modules
 	foreach ( ModuleRegistry::getActive() as $module ) {
-		call_user_func( $module->callback, $module, container() );
+		call_user_func( $module->callback, container(), $module );
 	}
 
 	// Store state of all modules into the database
