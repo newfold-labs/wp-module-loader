@@ -77,7 +77,6 @@ function isActive( string $name ) {
  * @return void
  */
 function load() {
-
 	// Load active modules
 	foreach ( ModuleRegistry::getActive() as $module ) {
 		call_user_func( $module->callback, container(), $module );
@@ -102,6 +101,8 @@ function container( Container $container = null ) {
 	if ( ! isset( $instance ) ) {
 		// If a container was passed, set it; otherwise default to an empty container.
 		$instance = ! is_null( $container ) ? $container : new Container();
+
+		do_action( 'newfold_container_set', $instance );
 	}
 
 	return $instance;
