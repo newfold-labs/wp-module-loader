@@ -56,7 +56,7 @@ if ( function_exists( 'add_action' ) ) {
 			register(
 				[
 					'name'     => 'sso',
-					'label'    => __( 'SSO', 'endurance' ),
+					'label'    => __( 'SSO', 'newfold-sso-module' ),
 					'callback' => function ( Container $container ) {
 						require __DIR__ . '/includes/sso.php';
 					},
