@@ -2,7 +2,7 @@
 
 namespace NewfoldLabs\WP\ModuleLoader;
 
-class Container extends \WP_Forge\Container\Container {
+class Container extends \NewfoldLabs\Container\Container {
 
 	/**
 	 * Get plugin data.

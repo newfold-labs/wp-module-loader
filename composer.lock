@@ -4,80 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f4ed258c39dcfc133e28e705f9a2a5ba",
+    "content-hash": "f2abb51fa78dce32bbe7b50af9a81c4c",
     "packages": [
         {
-            "name": "psr/container",
-            "version": "1.1.2",
+            "name": "newfold-labs/container",
+            "version": "1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/php-fig/container.git",
-                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea"
+                "url": "https://github.com/newfold-labs/container.git",
+                "reference": "1abbb7135337043d805597dd04bb0c41c5515fc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/513e0666f7216c7459170d56df27dfcefe1689ea",
-                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea",
+                "url": "https://api.github.com/repos/newfold-labs/container/zipball/1abbb7135337043d805597dd04bb0c41c5515fc5",
+                "reference": "1abbb7135337043d805597dd04bb0c41c5515fc5",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.4.0"
+                "php": ">=7.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Psr\\Container\\": "src/"
+                    "NewfoldLabs\\Container\\": "includes"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
-                }
-            ],
-            "description": "Common Container Interface (PHP FIG PSR-11)",
-            "homepage": "https://github.com/php-fig/container",
-            "keywords": [
-                "PSR-11",
-                "container",
-                "container-interface",
-                "container-interop",
-                "psr"
-            ],
-            "support": {
-                "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/1.1.2"
-            },
-            "time": "2021-11-05T16:50:12+00:00"
-        },
-        {
-            "name": "wp-forge/container",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wp-forge/container.git",
-                "reference": "e76a208d048b163dcb23068b149e16bdcfabc901"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wp-forge/container/zipball/e76a208d048b163dcb23068b149e16bdcfabc901",
-                "reference": "e76a208d048b163dcb23068b149e16bdcfabc901",
-                "shasum": ""
-            },
-            "require": {
-                "psr/container": "^1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WP_Forge\\Container\\": "includes"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -87,12 +38,11 @@
                     "email": "micah@wpscholar.com"
                 }
             ],
-            "description": "A lightweight, PHP 5.4+ compatible, PSR-11 dependency injection container.",
+            "description": "A lightweight, PHP 7.0+ compatible, PSR-11 dependency injection container.",
             "support": {
-                "issues": "https://github.com/wp-forge/container/issues",
-                "source": "https://github.com/wp-forge/container/tree/1.0"
+                "source": "https://github.com/newfold-labs/container/tree/1.2"
             },
-            "time": "2020-03-22T22:42:37+00:00"
+            "time": "2022-07-15T12:33:45+00:00"
         },
         {
             "name": "wp-forge/fluent",
@@ -214,5 +164,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

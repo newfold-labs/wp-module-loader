@@ -17,10 +17,19 @@
             "includes/functions.php"
         ]
     },
+    "repositories": {
+        "newfold": {
+            "type": "composer",
+            "url": "https://newfold-labs.github.io/satis/",
+            "only": [
+                "newfold-labs/*"
+            ]
+        }
+    },
     "require": {
         "wp-forge/fluent": "^1.0",
         "wpscholar/collection": "^1.0",
-        "wp-forge/container": "^1.0",
-        "wp-forge/wp-options": "^1.0"
+        "wp-forge/wp-options": "^1.0",
+        "newfold-labs/container": "^1.2"
     }
 }
