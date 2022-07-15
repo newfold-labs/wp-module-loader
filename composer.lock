@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "newfold-labs/container",
-            "version": "1.2",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/newfold-labs/container.git",
-                "reference": "1abbb7135337043d805597dd04bb0c41c5515fc5"
+                "reference": "5549ed972331edf450cd3d006691bf8a42727d4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/newfold-labs/container/zipball/1abbb7135337043d805597dd04bb0c41c5515fc5",
-                "reference": "1abbb7135337043d805597dd04bb0c41c5515fc5",
+                "url": "https://api.github.com/repos/newfold-labs/container/zipball/5549ed972331edf450cd3d006691bf8a42727d4f",
+                "reference": "5549ed972331edf450cd3d006691bf8a42727d4f",
                 "shasum": ""
             },
             "require": {
@@ -40,9 +40,9 @@
             ],
             "description": "A lightweight, PHP 7.0+ compatible, PSR-11 dependency injection container.",
             "support": {
-                "source": "https://github.com/newfold-labs/container/tree/1.2"
+                "source": "https://github.com/newfold-labs/container/tree/1.2.1"
             },
-            "time": "2022-07-15T12:33:45+00:00"
+            "time": "2022-07-15T13:11:03+00:00"
         },
         {
             "name": "wp-forge/fluent",
@@ -83,16 +83,16 @@
         },
         {
             "name": "wp-forge/wp-options",
-            "version": "1.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-forge/wp-options.git",
-                "reference": "cf5806ab24cac9a1f287bc53ddd395f7806a388b"
+                "reference": "df8899255dee19365599caa8801c75803e94e413"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-forge/wp-options/zipball/cf5806ab24cac9a1f287bc53ddd395f7806a388b",
-                "reference": "cf5806ab24cac9a1f287bc53ddd395f7806a388b",
+                "url": "https://api.github.com/repos/wp-forge/wp-options/zipball/df8899255dee19365599caa8801c75803e94e413",
+                "reference": "df8899255dee19365599caa8801c75803e94e413",
                 "shasum": ""
             },
             "type": "library",
@@ -114,22 +114,22 @@
             "description": "A WordPress helper class for managing plugin options.",
             "support": {
                 "issues": "https://github.com/wp-forge/wp-options/issues",
-                "source": "https://github.com/wp-forge/wp-options/tree/1.0"
+                "source": "https://github.com/wp-forge/wp-options/tree/1.1"
             },
-            "time": "2022-03-04T12:48:19+00:00"
+            "time": "2022-03-04T16:23:42+00:00"
         },
         {
             "name": "wpscholar/collection",
-            "version": "1.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpscholar/collection.git",
-                "reference": "f26360300a786a15532f9a4b1cababf639bec10e"
+                "reference": "3011b28e5e627ea6bc131ecfa93d78210d107415"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpscholar/collection/zipball/f26360300a786a15532f9a4b1cababf639bec10e",
-                "reference": "f26360300a786a15532f9a4b1cababf639bec10e",
+                "url": "https://api.github.com/repos/wpscholar/collection/zipball/3011b28e5e627ea6bc131ecfa93d78210d107415",
+                "reference": "3011b28e5e627ea6bc131ecfa93d78210d107415",
                 "shasum": ""
             },
             "type": "library",
@@ -151,9 +151,9 @@
             "description": "A PHP utility class for manipulating collections.",
             "support": {
                 "issues": "https://github.com/wpscholar/collection/issues",
-                "source": "https://github.com/wpscholar/collection/tree/master"
+                "source": "https://github.com/wpscholar/collection/tree/1.0.1"
             },
-            "time": "2019-02-06T20:50:18+00:00"
+            "time": "2022-03-22T10:54:37+00:00"
         }
     ],
     "packages-dev": [],
