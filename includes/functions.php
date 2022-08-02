@@ -68,7 +68,7 @@ function deactivate( string $name ) {
 function isActive( string $name ) {
 	$module = ModuleRegistry::get( $name );
 
-	return $module->get( 'isActive' );
+	return $module->get( 'isActive', false );
 }
 
 /**
