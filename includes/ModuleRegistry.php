@@ -2,7 +2,7 @@
 
 namespace NewfoldLabs\WP\ModuleLoader;
 
-use WP_Forge\Collection;
+use WP_Forge\Collection\Collection;
 
 class ModuleRegistry {
 
