@@ -106,35 +106,42 @@ OR
 
 ### Local Development
 
-When working on modules locally:
-
-1. Clone the module repository somewhere on the filesystem, i.e. `/wp-content/modules/wp-module-awesome`.
-2. Modify the sourcing-plugin's `composer.json` to reference that directory as a `path` in the repositories array (above
-   the satis reference).
-
+1. Use a dev environment for a Newfold Brand Plugin [wp-plugin-web, wp-plugin-hostgator, etc].
+2. Open the plugin root directory.
+3. Modify the `composer.json` in a text editor.
+	1. Add a new object to the "repositories" top-level property. _All local repositories should go at the beginning of the array declaration to supercede priority from the satis declarations._
+	2. The `url` path is relative to the current folder -- go up two directories for the `/wp-content` folder.
+	3. The symlink option set to false will copy files instead and wont update without manual intervention.
+	4. 
+		1. If this is a new module, add it to the `"require"` property with a version of `@dev`.
+		2. if this is an existing module, modify the entry in `"require"` to `@dev`.
 ```json
 {
-  "repositories": [
-    {
-      "type": "path",
-      "url": "../../modules/wp-module-awesome",
-      "options": {
-        "symlink": true
-      }
-    },
-    {
+"repositories": [
+  {
+     "type": "path",
+     "url": "../../path-in-wp-content-directory",
+     "options": {
+       "symlink": true
+     }
+   },
+   {
       "type": "composer",
       "url": "https://newfold-labs.github.io/satis/",
       "only": [
         "newfold-labs/*"
       ]
     }
-  ]
+],
+"require": {
+  "newfold-labs/wp-module-magic": "@dev",
+  "newfold-labs/wp-module-loader": "x.y.z"
+  }
 }
+
 ```
 
-3. In the `require` declaration, change the version to `@dev`
-4. `composer install`
+Finally, you may want to run a `composer update` routine or remove your `composer.lock` file and `composer install`.
 
 ## Understanding the module lifecycle
 
