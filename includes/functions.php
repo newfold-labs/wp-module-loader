@@ -37,11 +37,15 @@ function unregister( string $name ) {
  */
 function activate( string $name ) {
 
-	$module = ModuleRegistry::get( $name );
+	if ( ModuleRegistry::has( $name ) ) {
 
-	// Activate module
-	$module->isActive = true;
-	options()->set( $name, true );
+		/** @var Module $module */
+		$module = ModuleRegistry::get( $name );
+
+		// Activate module
+		$module->isActive = true;
+		options()->set( $name, true );
+	}
 }
 
 /**
@@ -51,11 +55,16 @@ function activate( string $name ) {
  */
 function deactivate( string $name ) {
 
-	$module = ModuleRegistry::get( $name );
+	if ( ModuleRegistry::has( $name ) ) {
 
-	// Deactivate module
-	$module->isActive = false;
-	options()->set( $name, false );
+		/** @var Module $module */
+		$module = ModuleRegistry::get( $name );
+
+		// Deactivate module
+		$module->isActive = false;
+		options()->set( $name, false );
+
+	}
 }
 
 /**
@@ -66,9 +75,7 @@ function deactivate( string $name ) {
  * @return bool
  */
 function isActive( string $name ) {
-	$module = ModuleRegistry::get( $name );
-
-	return $module->get( 'isActive', false );
+	return ModuleRegistry::getActive()->has( $name );
 }
 
 /**
