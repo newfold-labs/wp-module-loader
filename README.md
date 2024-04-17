@@ -17,6 +17,15 @@ This loader instantiates Newfold WordPress Modules inside our WordPress Plugins.
 * <a href="#understanding-the-module-lifecycle">Understanding the module lifecycle</a>
 * <a href="#module-loader-api">Module Loader API</a>
 
+## Module Responsibilities
+- Provides a dependency injection container for shared dependencies across the brand plugin modules.
+- Provides a framework for registering, unregistering, activating, deactivating, and checking if a module is active.
+- Provides a plugin class that makes getting basic plugin information simple.
+
+## Critical Paths
+- The dependency injection container should be created by the brand plugin and successfully shared across all other modules.
+- Calling the `register()` function should successfully register the module and run the code on the `after_setup_theme` action hook.
+
 ## Newfold WordPress Modules
 
 Newfold WordPress modules are PHP packages intended to be installed in WordPress plugins via Composer from our Satis
