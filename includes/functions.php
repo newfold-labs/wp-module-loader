@@ -101,15 +101,23 @@ function load() {
  * @return Container
  */
 function container( Container $container = null ) {
-
 	static $instance;
+	static $initialized = false;
 
-	// If no container was passed and was never set, default to an empty container
-	if ( ! isset( $instance ) ) {
+	// Ensure this runs after WordPress initialization (plugins_loaded)
+	if ( ! did_action('plugins_loaded') ) {
+        add_action('plugins_loaded', function() use ($container) {
+            container($container);
+        });
+        return null;
+    }
+
+	if (!$initialized) {
 		// If a container was passed, set it; otherwise default to an empty container.
 		$instance = ! is_null( $container ) ? $container : new Container();
 
 		do_action( 'newfold_container_set', $instance );
+		$initialized = true;
 	}
 
 	return $instance;
