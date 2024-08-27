@@ -105,10 +105,10 @@ function container( Container $container = null ) {
 	static $initialized = false;
 
 	// Ensure this runs after WordPress initialization (plugins_loaded)
-	if ( ! did_action('plugins_loaded') ) {
-        add_action('plugins_loaded', function() use ($container) {
-            container($container);
-        });
+	if ( ! did_action( 'plugins_loaded' ) ) {
+		add_action( 'plugins_loaded', function() use ( $container ) {
+			container( $container );
+		});
         return null;
     }
 
