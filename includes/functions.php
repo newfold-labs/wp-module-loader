@@ -112,7 +112,7 @@ function container( Container $container = null ) {
         return null;
     }
 
-	if (!$initialized) {
+	if ( !$initialized ) {
 		// If a container was passed, set it; otherwise default to an empty container.
 		$instance = ! is_null( $container ) ? $container : new Container();
 
