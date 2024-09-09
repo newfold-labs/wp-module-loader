@@ -109,7 +109,6 @@ function container( Container $container = null ) {
 		add_action( 'plugins_loaded', function() use ( $container ) {
 			container( $container );
 		});
-        return null;
     }
 
 	if ( !$initialized ) {
