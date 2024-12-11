@@ -54,9 +54,9 @@ class Plugin extends Fluent {
 		if ( ! function_exists( 'get_plugin_data' ) ) {
 			require ABSPATH . 'wp-admin/includes/plugin.php';
 		}
-
-		$data = get_plugin_data( $file );
-
+		
+		$data = get_plugin_data( $file, true, false );
+		
 		$this->set( 'name', $data['Name'] ?? '' );
 		$this->set( 'version', $data['Version'] ?? '' );
 		$this->headers = new Fluent( $data );
