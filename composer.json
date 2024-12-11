@@ -30,6 +30,6 @@
         "newfold-labs/container": "^1.2",
         "wp-forge/collection": "^1.0",
         "wp-forge/fluent": "^1.0",
-        "wp-forge/wp-options": "^1.0"
+        "wp-forge/wp-options": "^1.1"
     }
 }
