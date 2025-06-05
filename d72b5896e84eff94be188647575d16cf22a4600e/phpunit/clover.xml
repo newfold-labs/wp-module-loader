@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1749121485">
-  <project timestamp="1749121485">
+<coverage generated="1749121629">
+  <project timestamp="1749121629">
     <file name="/home/runner/work/wp-module-loader/wp-module-loader/includes/Container.php">
       <class name="NewfoldLabs\WP\ModuleLoader\Container" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
