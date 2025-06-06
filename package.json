@@ -1,0 +1,7 @@
+{
+  "name": "wp-module-loader",
+  "version": "1.0.12",
+  "devDependencies": {
+    "@wordpress/env": "^10.20.0"
+  }
+}
