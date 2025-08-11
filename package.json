@@ -1,6 +1,10 @@
 {
   "name": "wp-module-loader",
   "version": "1.0.12",
+  "engines": {
+    "node": ">=22.11.0",
+    "npm": ">=10.9.0"
+  },
   "devDependencies": {
     "@wordpress/env": "^10.20.0"
   }
