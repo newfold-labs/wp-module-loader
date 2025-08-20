@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "newfold-labs/container",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/newfold-labs/container.git",
-                "reference": "19bb75bb4a64a282f7d142fff9f3418177022851"
+                "reference": "0c16f8a70523159c1f3842a242e9c3b20f5729a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/newfold-labs/container/zipball/19bb75bb4a64a282f7d142fff9f3418177022851",
-                "reference": "19bb75bb4a64a282f7d142fff9f3418177022851",
+                "url": "https://api.github.com/repos/newfold-labs/container/zipball/0c16f8a70523159c1f3842a242e9c3b20f5729a6",
+                "reference": "0c16f8a70523159c1f3842a242e9c3b20f5729a6",
                 "shasum": ""
             },
             "require": {
@@ -40,9 +40,9 @@
             ],
             "description": "A lightweight, PHP 7.0+ compatible, PSR-11 dependency injection container.",
             "support": {
-                "source": "https://github.com/newfold-labs/container/tree/1.2.2"
+                "source": "https://github.com/newfold-labs/container/tree/1.2.3"
             },
-            "time": "2022-08-26T17:23:54+00:00"
+            "time": "2025-05-06T18:14:40+00:00"
         },
         {
             "name": "wp-forge/collection",
@@ -5259,5 +5259,5 @@
     "platform-overrides": {
         "php": "7.3"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
