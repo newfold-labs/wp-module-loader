@@ -100,7 +100,7 @@ function load() {
  *
  * @return Container
  */
-function container( Container $container = null ) {
+function container( ?Container $container = null ) {
 
 	static $instance;
 
