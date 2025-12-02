@@ -1,9 +1,12 @@
 {
   "name": "wp-module-loader",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "engines": {
     "node": ">=22.11.0",
     "npm": ">=10.9.0"
+  },
+  "scripts": {
+    "build": "echo \"No build step required\" && exit 0"
   },
   "devDependencies": {
     "@wordpress/env": "^10.20.0"
