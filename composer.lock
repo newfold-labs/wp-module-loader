@@ -46,16 +46,16 @@
         },
         {
             "name": "wp-forge/collection",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-forge/collection.git",
-                "reference": "e304ddc0130d466dcc55e3a8dee79f0d745ca47a"
+                "reference": "9bed6ec6a73f0a033276c65e07ced5c894deff71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-forge/collection/zipball/e304ddc0130d466dcc55e3a8dee79f0d745ca47a",
-                "reference": "e304ddc0130d466dcc55e3a8dee79f0d745ca47a",
+                "url": "https://api.github.com/repos/wp-forge/collection/zipball/9bed6ec6a73f0a033276c65e07ced5c894deff71",
+                "reference": "9bed6ec6a73f0a033276c65e07ced5c894deff71",
                 "shasum": ""
             },
             "type": "library",
@@ -77,9 +77,9 @@
             "description": "A PHP utility class for manipulating collections.",
             "support": {
                 "issues": "https://github.com/wp-forge/collection/issues",
-                "source": "https://github.com/wp-forge/collection/tree/1.0.2"
+                "source": "https://github.com/wp-forge/collection/tree/1.0.3"
             },
-            "time": "2022-08-26T17:42:31+00:00"
+            "time": "2025-12-01T15:57:49+00:00"
         },
         {
             "name": "wp-forge/fluent",
@@ -5259,5 +5259,5 @@
     "platform-overrides": {
         "php": "7.3"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
