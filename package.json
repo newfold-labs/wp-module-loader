@@ -5,6 +5,9 @@
     "node": ">=22.11.0",
     "npm": ">=10.9.0"
   },
+  "scripts": {
+    "build": "echo \"No build step required\" && exit 0"
+  },
   "devDependencies": {
     "@wordpress/env": "^10.20.0"
   }
