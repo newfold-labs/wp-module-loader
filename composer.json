@@ -46,7 +46,7 @@
         }
     },
     "require-dev": {
-        "johnpbloch/wordpress": "6.8.3",
+        "johnpbloch/wordpress": "6.9.0",
         "lucatume/wp-browser": "*",
         "phpunit/phpcov": "*"
     },
