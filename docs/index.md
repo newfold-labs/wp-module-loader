@@ -11,6 +11,7 @@ This directory holds documentation for wp-module-loader, for both **humans** and
 | [integration.md](integration.md) | How host plugins use the loader (container, register, load) and how modules register. |
 | [development.md](development.md) | Lint, test, and day-to-day workflow. |
 | [dependencies.md](dependencies.md) | Composer dependencies and how they are used. |
+| [release.md](release.md) | Release process: use the Newfold Prepare Release workflow. |
 
 ## Quick links
 
