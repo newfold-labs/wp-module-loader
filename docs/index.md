@@ -1,3 +1,10 @@
+---
+name: wp-module-loader
+title: Documentation index
+description: Table of contents and quick links.
+updated: 2025-03-18
+---
+
 # wp-module-loader – Documentation index
 
 This directory holds documentation for wp-module-loader, for both **humans** and **AI agents**. Start here to find the right doc for your task.
