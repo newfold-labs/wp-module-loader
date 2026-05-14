@@ -5,10 +5,15 @@ on:
     types:
       - created
 
+# Disable permissions for all available scopes by default.
+# Any needed permissions should be configured at the job level.
+permissions: {}
+
 jobs:
   webhook:
     name: Send Webhook
     runs-on: ubuntu-latest
+    permissions: {} # Steps only use ${{ secrets.WEBHOOK_TOKEN }} for repository_dispatch; no GITHUB_TOKEN usage
     steps:
 
       - name: Set Package

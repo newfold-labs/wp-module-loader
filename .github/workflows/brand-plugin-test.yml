@@ -10,10 +10,15 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.head_ref || github.sha }}
   cancel-in-progress: true
 
+# Disable permissions for all available scopes by default.
+# Any needed permissions should be configured at the job level.
+permissions: {}
+
 jobs:
   setup:
     name: Setup
     runs-on: ubuntu-latest
+    permissions: {} # No checkout or GitHub API use; extracts branch metadata for reusable workflow inputs only
     outputs:
       branch: ${{ steps.extract_branch.outputs.branch }}
     steps:
@@ -27,6 +32,8 @@ jobs:
     name: Bluehost Build and Test
     needs: setup
     uses: newfold-labs/workflows/.github/workflows/module-plugin-test.yml@main
+    permissions:
+      contents: read # Matches downstream reusable workflow; required for checkout/composer/GitHub-hosted actions using GITHUB_TOKEN on private repos
     with:
       module-repo: ${{ github.repository }}
       module-branch: ${{ needs.setup.outputs.branch }}
@@ -37,6 +44,8 @@ jobs:
     name: HostGator Build and Test
     needs: setup
     uses: newfold-labs/workflows/.github/workflows/module-plugin-test.yml@main
+    permissions:
+      contents: read # Matches downstream reusable workflow; required for checkout/composer/GitHub-hosted actions using GITHUB_TOKEN on private repos
     with:
       module-repo: ${{ github.repository }}
       module-branch: ${{ needs.setup.outputs.branch }}
@@ -47,6 +56,8 @@ jobs:
     name: Web.com Build and Test
     needs: setup
     uses: newfold-labs/workflows/.github/workflows/module-plugin-test.yml@main
+    permissions:
+      contents: read # Matches downstream reusable workflow; required for checkout/composer/GitHub-hosted actions using GITHUB_TOKEN on private repos
     with:
       module-repo: ${{ github.repository }}
       module-branch: ${{ needs.setup.outputs.branch }}
@@ -57,6 +68,8 @@ jobs:
     name: Crazy Domains Build and Test
     needs: setup
     uses: newfold-labs/workflows/.github/workflows/module-plugin-test.yml@main
+    permissions:
+      contents: read # Matches downstream reusable workflow; required for checkout/composer/GitHub-hosted actions using GITHUB_TOKEN on private repos
     with:
       module-repo: ${{ github.repository }}
       module-branch: ${{ needs.setup.outputs.branch }}
@@ -67,6 +80,8 @@ jobs:
     name: Mojo Build and Test
     needs: setup
     uses: newfold-labs/workflows/.github/workflows/module-plugin-test.yml@main
+    permissions:
+      contents: read # Matches downstream reusable workflow; required for checkout/composer/GitHub-hosted actions using GITHUB_TOKEN on private repos
     with:
       module-repo: ${{ github.repository }}
       module-branch: ${{ needs.setup.outputs.branch }}
