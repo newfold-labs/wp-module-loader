@@ -24,7 +24,7 @@ jobs:
     permissions:
       contents: write      # Required to clone and push to gh-pages via git-auto-commit-action with GITHUB_TOKEN
       pull-requests: write # Required to post coverage comments via mshick/add-pr-comment on pull requests
-
+    timeout-minutes: 60
     services:
       mysql:
         image: mysql:5.7 # Password auth did not work on 8.0 on PHP 7.3, it did seem to work for PHP 7.4+

@@ -19,6 +19,7 @@ jobs:
     name: Setup
     runs-on: ubuntu-latest
     permissions: {} # No checkout or GitHub API use; extracts branch metadata for reusable workflow inputs only
+    timeout-minutes: 10
     outputs:
       branch: ${{ steps.extract_branch.outputs.branch }}
     steps:
@@ -34,6 +35,7 @@ jobs:
     uses: newfold-labs/workflows/.github/workflows/module-plugin-test.yml@main
     permissions:
       contents: read # Matches downstream reusable workflow; required for checkout/composer/GitHub-hosted actions using GITHUB_TOKEN on private repos
+    timeout-minutes: 45
     with:
       module-repo: ${{ github.repository }}
       module-branch: ${{ needs.setup.outputs.branch }}
@@ -46,6 +48,7 @@ jobs:
     uses: newfold-labs/workflows/.github/workflows/module-plugin-test.yml@main
     permissions:
       contents: read # Matches downstream reusable workflow; required for checkout/composer/GitHub-hosted actions using GITHUB_TOKEN on private repos
+    timeout-minutes: 45
     with:
       module-repo: ${{ github.repository }}
       module-branch: ${{ needs.setup.outputs.branch }}
@@ -58,6 +61,7 @@ jobs:
     uses: newfold-labs/workflows/.github/workflows/module-plugin-test.yml@main
     permissions:
       contents: read # Matches downstream reusable workflow; required for checkout/composer/GitHub-hosted actions using GITHUB_TOKEN on private repos
+    timeout-minutes: 45
     with:
       module-repo: ${{ github.repository }}
       module-branch: ${{ needs.setup.outputs.branch }}
@@ -70,6 +74,7 @@ jobs:
     uses: newfold-labs/workflows/.github/workflows/module-plugin-test.yml@main
     permissions:
       contents: read # Matches downstream reusable workflow; required for checkout/composer/GitHub-hosted actions using GITHUB_TOKEN on private repos
+    timeout-minutes: 45
     with:
       module-repo: ${{ github.repository }}
       module-branch: ${{ needs.setup.outputs.branch }}
@@ -82,6 +87,7 @@ jobs:
     uses: newfold-labs/workflows/.github/workflows/module-plugin-test.yml@main
     permissions:
       contents: read # Matches downstream reusable workflow; required for checkout/composer/GitHub-hosted actions using GITHUB_TOKEN on private repos
+    timeout-minutes: 45
     with:
       module-repo: ${{ github.repository }}
       module-branch: ${{ needs.setup.outputs.branch }}
